@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+}
+
+header {
+  background-color: black;
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 15px;
+}
+
+header span {
+  font-size: 10px;
+
+
+}
+
+.travaux h2 {
+
+  font-size: 10px;
+}
+
+
+header div button {
+  padding: 12px 24px;
+  border-radius: 4px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+header div button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+
+.menu-nav {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin-right: 10px;
+  margin-top: 0px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 10px;
+
+}
+
+nav ul li a {
+  background-color: orange;
+  color: #fff;
+  text-decoration: none;
+  paddinG: 10px 10px;
+  border-radius: 4px;
+
+}
+
+.menu-nav .bouton:hover {
+  background-color: #0056b3;
+}
+
+
+section h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: orange;
+  margin: 30px;
+}
+
+section h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: gold;
+  margin: 30px;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: lightgray;
+  margin: 30px;
+}
+
+section ul {
+  margin-left: 20px;
+  color: lightgray;
+}
+
+
+
+/* CSS pour le bas de page footer */
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+}
+
+.footer-container .logofooter {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.logofooter img {
+  width: 100px;
+  height: 100px;
+}
+
+
+.container a {
+  text-decoration: none;
+  color: white;
+}
+
+.address h2,
+.opening-hours h2,
+.contact-info h2 {
+  color: orange;
+  font-size: 10px;
+}
+
+.address p,
+.opening-hours p,
+.contact-info p {
+  color: white;
+  font-size: 10px;
+}
+
+.address,
+.opening-hours,
+.contact-info {
+  margin-left: 20px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .container {
+  font-style: italic;
+  font-size: 8px;
+  color: #fff;
+
+}

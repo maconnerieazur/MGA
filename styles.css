@@ -1,0 +1,388 @@
+   body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+   }
+
+   header {
+     background-color: black;
+     padding: 10px;
+     padding-top: 0px;
+     padding-bottom: 0px;
+     color: #fff;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   header .logo {
+     margin-right: 20px;
+     width: 100px;
+     height: 100px;
+   }
+
+
+   header h1 {
+     margin: 0;
+     font-size: 15px;
+   }
+
+   header span {
+     font-size: 10px;
+
+
+   }
+
+   .travaux h2 {
+
+     font-size: 10px;
+   }
+
+
+   header div button {
+     padding: 12px 24px;
+     border-radius: 4px;
+     background-color: orange;
+     color: #fff;
+     border: none;
+     font-size: 18px;
+     text-decoration: none;
+     cursor: pointer;
+     transition: transform 0.3s;
+   }
+
+   header div button:hover {
+     background-color: #0056b3;
+     transform: scale(1.1);
+   }
+
+
+   .menu-nav {
+     position: fixed;
+     width: 100%;
+     text-align: center;
+   }
+
+   nav ul {
+     list-style: none;
+     margin-right: 10px;
+     margin-top: 0px;
+     padding-top: 15px;
+     display: flex;
+     justify-content: center;
+   }
+
+   nav ul li {
+     margin-right: 10px;
+
+   }
+
+   nav ul li a {
+     background-color: orange;
+     color: #fff;
+     text-decoration: none;
+     paddinG: 10px 10px;
+     border-radius: 4px;
+
+   }
+
+   .menu-nav .bouton:hover {
+     background-color: #0056b3;
+   }
+
+
+
+   .logo-container {
+     display: flex;
+     align-items: center;
+     margin-left: 20px;
+   }
+
+   .logo-container a {
+     margin-right: 10px;
+   }
+
+   .logo-container img {
+     width: 30px;
+     height: 30px;
+     transition: transform 0.3s;
+   }
+
+   .logo-container img:hover {
+     transform: scale(1.1);
+   }
+
+   .fixed-column {
+     position: fixed;
+     top: 50%;
+     left: 20px;
+     transform: translateY(-50%);
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     z-index: 9999;
+   }
+
+   .fixed-column a {
+     margin-bottom: 10px;
+   }
+
+   /*css pour la section accueil*/
+
+
+   section.accueil {
+     padding-top: 0px;
+     padding: 100px;
+     background-image: url("maison.jpg");
+     background-position: left top;
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+
+   section.accueil .container {
+     border-radius: 4px;
+     color: orange;
+     background-color: rgba(0, 0, 0, 0.6);
+     padding: 10px;
+   }
+
+
+
+
+   .accueil h1 {
+
+     font-size: 20px;
+   }
+
+   section div.columns {
+
+     display: flex;
+     column-count: 2;
+     column-gap: 20px;
+     align-items: stretch;
+   }
+
+   section div.columns h2 {
+
+     font-size: 15px;
+   }
+
+   div.columns p {
+
+     font-size: 10px;
+   }
+
+   section div button {
+     padding: 12px 24px;
+     border-radius: 4px;
+     background-color: orange;
+     color: #fff;
+     border: none;
+     font-size: 18px;
+     text-decoration: none;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 20px;
+     transition: transform 0.3s;
+   }
+
+   section div button:hover {
+     background-color: #0056b3;
+     transform: scale(1.1);
+   }
+
+   /* CSS pour la section presentation */
+
+   #presentation {
+
+     background-color: #f9f9f9;
+   }
+
+   .columnspresentation {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     flex-direction: column;
+     /* Ajout de cette ligne pour changer la direction du flex container */
+   }
+
+   .text-columnpresentation,
+   .image-column {
+     flex-basis: calc(50% - 20px);
+     /* Utilisez 50% de la largeur disponible pour chaque colonne, en laissant un espace de 20px entre les colonnes */
+     box-sizing: border-box;
+   }
+
+   .text-columnpresentation {
+     padding: 20px;
+   }
+
+   .text-columnpresentation h2 {
+     color: #333;
+     font-size: 24px;
+   }
+
+   .text-columnpresentation p {
+     color: #555;
+     font-size: 16px;
+     line-height: 1.6;
+   }
+
+   .image-column {
+     padding: 20px;
+     text-align: center;
+   }
+
+   .image-column img {
+     max-width: 100%;
+     height: auto;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   }
+
+   /* CSS pour la section avis */
+
+   .sectionavis {
+     background-color: #f9f9f9;
+     padding: 50px 20px;
+     /* Ajustez l'espacement intérieur selon vos besoins */
+   }
+
+   .sectionavis .avisimage-row {
+     text-align: center;
+     margin-bottom: 20px;
+   }
+
+   .sectionavis .avisimage-row img {
+     max-width: 100%;
+     height: auto;
+   }
+
+   .sectionavis .logoavis {
+     text-align: center;
+   }
+
+   .sectionavis .logoavis img {
+     max-width: 100px;
+     /* Ajustez la largeur du logo selon vos besoins */
+     height: auto;
+     border-radius: 8px;
+   }
+
+   .sectionavis .avis-section {
+     position: relative;
+   }
+
+   .sectionavis .avis-container {
+     position: relative;
+     overflow: hidden;
+   }
+
+   .sectionavis .centered {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+
+   .sectionavis .arrow {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     font-size: 150px;
+     color: #555;
+     cursor: pointer;
+   }
+
+   .sectionavis .left {
+     left: 10px;
+   }
+
+   .sectionavis .right {
+     right: 10px;
+   }
+
+   .sectionavis .avis-wrapper {
+     position: relative;
+     margin-top: 20px;
+     padding: 20px;
+     background-color: rgba(0, 0, 0, 0);
+     color: orange;
+     border-radius: 4px;
+     border: 0px;
+   }
+
+   .sectionavis .avis {
+     display: none;
+     text-align: center;
+     margin-top: 20px;
+   }
+
+   .sectionavis .avis.active {
+     display: block;
+     /* Affichez l'avis actif */
+   }
+
+   .sectionavis h2.avis-text {
+     color: #333;
+     font-size: 10px;
+     line-height: 1.6;
+   }
+
+   /* CSS pour le bas de page footer */
+
+   .footer-container {
+     display: flex;
+     align-items: flex-start;
+     justify-content: space-between;
+     flex-wrap: nowrap;
+
+   }
+
+   .footer-container .logofooter {
+     margin-right: 10px;
+     margin-left: 10px;
+   }
+
+   .logofooter img {
+     width: 100px;
+     height: 100px;
+   }
+
+
+   .container a {
+     text-decoration: none;
+     color: black;
+   }
+
+   .address h2,
+   .opening-hours h2,
+   .contact-info h2 {
+     color: orange;
+     font-size: 10px;
+   }
+
+   .address p,
+   .opening-hours p,
+   .contact-info p {
+     color: black;
+     font-size: 10px;
+   }
+
+   .address,
+   .opening-hours,
+   .contact-info {
+     margin-left: 20px;
+   }
+
+   .contact-info a {
+     text-decoration: none;
+     color: #fff;
+   }
+
+   footer .container {
+     font-style: italic;
+     font-size: 8px;
+
+   }
